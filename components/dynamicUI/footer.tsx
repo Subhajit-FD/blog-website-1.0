@@ -59,11 +59,14 @@ export async function Footer() {
 
           <div>
             <h4 className="font-bold mb-4">Connect</h4>
-            <SocialLinks />
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-12 pt-8 text-center text-sm text-muted-foreground space-y-4">
+          <div className="flex items-center justify-center gap-4">
+            <SocialLinks />
+          </div>
+          <hr/>
           <p>© {new Date().getFullYear()} Blogzenx. All rights reserved.</p>
         </div>
       </div>
