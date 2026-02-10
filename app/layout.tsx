@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { DeleteAlertProvider } from "@/components/providers/delete-alert-provider";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,16 @@ export default function RootLayout({
           <Toaster />
         </DeleteAlertProvider>
       </body>
+      <Script strategy="lazyOnload" id="my-script">
+        {`
+        window._browsee = window._browsee || function () { (_browsee.q = _browsee.q || []).push(arguments) };
+        _browsee('init', ${process.env.BROWSEE_API_KEY}); 
+    `}
+      </Script>
+      <Script
+        strategy="lazyOnload"
+        src={"https://cdn.browsee.io/js/browsee.min.js"}
+      />
     </html>
   );
 }
