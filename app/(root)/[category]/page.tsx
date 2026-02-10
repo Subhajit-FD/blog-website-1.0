@@ -6,9 +6,9 @@ import { BlogCard } from "@/components/ui/blog-card";
 import Link from "next/link";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     category: string;
-  };
+  }>;
 }
 
 const CategoryPage = async ({ params }: PageProps) => {

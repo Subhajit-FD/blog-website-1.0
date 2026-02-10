@@ -37,7 +37,7 @@ async function getBlog(slug: string) {
 export default async function BlogPostPage({
   params,
 }: {
-  params: { category: string; slug: string };
+  params: Promise<{ category: string; slug: string }>;
 }) {
   const { slug, category: categorySlug } = await params;
   const blog = await getBlog(slug);

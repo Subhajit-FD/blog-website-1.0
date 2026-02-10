@@ -126,7 +126,23 @@ export const DeleteAlertProvider = ({ children }: { children: ReactNode }) => {
 // Changes: We use a regular button styled as destructive, behaving like AlertDialogAction but with explicit click handling.
 import { Button } from "@/components/ui/button";
 
-const ButtonWrapper = ({ onClick, disabled, children, variant }: any) => {
+const ButtonWrapper = ({
+  onClick,
+  disabled,
+  children,
+  variant,
+}: {
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  disabled: boolean;
+  children: React.ReactNode;
+  variant:
+    | "default"
+    | "destructive"
+    | "outline"
+    | "secondary"
+    | "ghost"
+    | "link";
+}) => {
   return (
     <Button variant={variant} onClick={onClick} disabled={disabled}>
       {children}

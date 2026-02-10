@@ -4,7 +4,7 @@ import { Comment } from "@/models/comment.model";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { blogId: string } },
+  { params }: { params: Promise<{ blogId: string }> },
 ) {
   try {
     await dbConnect();
