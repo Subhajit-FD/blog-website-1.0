@@ -1,9 +1,8 @@
 import dbConnect from "@/lib/db";
 import { Blog } from "@/models/blog.model";
-import { User } from "@/models/user.model"; // Ensure User model is registered
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { CalendarIcon, UserIcon } from "lucide-react";
+import { CalendarIcon} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BlogInteractions } from "@/components/blog/blog-interactions";
@@ -70,7 +69,7 @@ export default async function BlogPostPage({
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="max-w-[150px] md:max-w-[300px] truncate">
+                  <BreadcrumbPage className="max-w-37.5 md:max-w-75 truncate">
                     {blog.title}
                   </BreadcrumbPage>
                 </BreadcrumbItem>
