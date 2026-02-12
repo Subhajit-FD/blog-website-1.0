@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SocialLinks from "@/components/ui/social-links";
-import { Category } from "@/models/category.model";
 import dbConnect from "@/lib/db";
+import { Category } from "@/models";
 
 export async function Footer() {
   await dbConnect();

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
-import { Comment } from "@/models/comment.model";
+import { Comment } from "@/models";
 
 export async function GET(
   req: NextRequest,

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
+import { Blog } from "@/models";
 
 export const dynamic = "force-dynamic";
 

@@ -1,5 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
+import { Blog } from "@/models";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CalendarIcon} from "lucide-react";

@@ -1,6 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
-import { Category } from "@/models/category.model";
+import { Blog, Category } from "@/models";
 import { Button } from "@/components/ui/button";
 import { BlogCard } from "@/components/ui/blog-card";
 import Link from "next/link";

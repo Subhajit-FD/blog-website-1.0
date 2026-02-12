@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
-import { User } from "@/models/user.model";
+import { User } from "@/models";
 import bcrypt from "bcryptjs";
 
 export async function GET(req) {

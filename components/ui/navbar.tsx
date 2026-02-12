@@ -1,5 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Category } from "@/models/category.model";
+import { Category } from "@/models";
 import { NavbarClient } from "./navbar-client";
 
 const Navbar = async () => {

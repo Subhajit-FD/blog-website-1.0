@@ -1,6 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
-import { User } from "@/models/user.model"; // Ensure User model is registered
+import { Blog, User } from "@/models";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CalendarIcon, UserIcon } from "lucide-react";

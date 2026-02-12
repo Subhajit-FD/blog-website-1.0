@@ -6,10 +6,7 @@ import { AppSidebar } from "@/components/ui/app-sidebar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, FileText, FolderTree, MessageSquare } from "lucide-react";
 import dbConnect from "@/lib/db";
-import { User } from "@/models/user.model";
-import { Blog } from "@/models/blog.model";
-import { Category } from "@/models/category.model";
-import { Comment } from "@/models/comment.model";
+import { User, Blog, Category, Comment } from "@/models";
 import { AnalyticsDashboard } from "@/components/dashboard/analytics-dashboard";
 
 const Dashboard = async () => {

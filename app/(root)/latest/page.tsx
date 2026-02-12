@@ -1,5 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
+import { Blog } from "@/models";
 import { Button } from "@/components/ui/button";
 import { BlogCard } from "@/components/ui/blog-card";
 import Link from "next/link";

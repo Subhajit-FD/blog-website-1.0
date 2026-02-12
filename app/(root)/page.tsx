@@ -1,6 +1,5 @@
 import dbConnect from "@/lib/db";
-import { Blog } from "@/models/blog.model";
-import { Category } from "@/models/category.model";
+import { Blog, Category } from "@/models";
 import "@/models/user.model";
 import Link from "next/link";
 import Image from "next/image";

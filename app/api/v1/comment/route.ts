@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import { Comment } from "@/models/comment.model";
 import dbConnect from "@/lib/db";
-import { User } from "@/models/user.model";
-import { Blog } from "@/models/blog.model";
+import { Comment, User, Blog } from "@/models";
 
 export async function GET() {
   await dbConnect();

@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
-import { Category } from "@/models/category.model";
-import { User } from "@/models/user.model"; // Ensure User model is registered
+import { Category, User } from "@/models";
 import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 
